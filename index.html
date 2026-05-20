@@ -23,18 +23,22 @@ body{font-family:var(--font-body);font-size:16px;line-height:1.5;color:var(--ic-
 .wrap{max-width:680px;margin:0 auto;background:var(--ic-white);box-shadow:var(--shadow-card);}
 .eyebrow{font-family:var(--font-accent);font-weight:600;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ic-orange);display:inline-block;}
 
-.wordmark{line-height:1.05;}
+/* ---- Wordmark (text logo) ---- */
+.brandlogo{height:40px;width:auto;display:block;}
 .wordmark .wm-top{font-family:var(--font-heading);font-weight:800;font-size:20px;letter-spacing:0.02em;color:var(--ic-white);text-transform:uppercase;}
 .wordmark .wm-sub{font-family:var(--font-accent);font-weight:500;font-size:10px;letter-spacing:0.18em;color:var(--ic-silver);text-transform:uppercase;margin-top:3px;}
 .wordmark .wm-top .dot{color:var(--ic-orange);}
 
+/* ---- Masthead ---- */
 .masthead{background:var(--ic-ink);padding:26px 40px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
 .masthead .issue{font-family:var(--font-accent);font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ic-silver);text-align:right;}
 
+/* ---- Hero ---- */
 .hero{padding:48px 40px 36px;border-bottom:1px solid var(--divider);}
 .hero h1{font-family:var(--font-heading);font-weight:700;font-size:34px;line-height:1.15;margin:10px 0 14px;color:var(--ic-ink);}
 .hero p{font-size:17px;color:var(--ic-steel);max-width:52ch;}
 
+/* ---- Audio CTA band (the single orange action) ---- */
 .audio{margin:28px 40px 8px;border:1.5px solid var(--ic-orange);border-radius:6px;background:var(--ic-orange-050);padding:22px 24px;}
 .audio .label{font-family:var(--font-heading);font-weight:700;font-size:18px;color:var(--ic-ink);margin-bottom:4px;}
 .audio .sub{font-size:14px;color:var(--ic-steel);margin-bottom:14px;}
@@ -42,9 +46,11 @@ body{font-family:var(--font-body);font-size:16px;line-height:1.5;color:var(--ic-
 .btn-orange:hover{background:var(--ic-orange-700);color:#fff;text-decoration:none;}
 audio{width:100%;margin-top:16px;}
 
+/* ---- Section heading ---- */
 .section-head{padding:36px 40px 4px;}
 .section-head h2{font-family:var(--font-heading);font-weight:700;font-size:22px;color:var(--ic-ink);margin-top:6px;}
 
+/* ---- Carrier cards ---- */
 .card{margin:18px 40px;border:1px solid var(--divider);border-left:4px solid var(--ic-blue);border-radius:6px;padding:22px 24px;}
 .card .carrier{font-family:var(--font-heading);font-weight:700;font-size:19px;color:var(--ic-blue);margin-bottom:2px;}
 .card .tag{font-family:var(--font-accent);font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--ic-steel);}
@@ -56,8 +62,9 @@ audio{width:100%;margin-top:16px;}
 .action{margin-top:14px;padding-top:12px;border-top:1px solid var(--divider);font-size:14px;color:var(--ic-steel);}
 .action b{color:var(--ic-ink);}
 
+/* ---- Footer ---- */
 .footer{background:var(--ic-ink);color:var(--ic-silver);padding:30px 40px;margin-top:36px;font-size:13px;line-height:1.6;}
-.footer .wordmark{margin-bottom:14px;}
+.footer .brandlogo{height:28px;margin-bottom:14px;}
 .footer a{color:var(--ic-white);}
 .footer .fine{color:var(--ic-steel);font-size:11px;margin-top:14px;}
 
@@ -72,10 +79,7 @@ audio{width:100%;margin-top:16px;}
 <div class="wrap">
 
   <div class="masthead">
-    <div class="wordmark">
-      <div class="wm-top">Integrated<span class="dot">.</span></div>
-      <div class="wm-sub">Insurance Solutions</div>
-    </div>
+    <img class="brandlogo" src="iis-logo-white.png" alt="Integrated Insurance Solutions">
     <div class="issue">Carrier Desk<br>May 20, 2026</div>
   </div>
 
@@ -100,6 +104,7 @@ audio{width:100%;margin-top:16px;}
     <h2>Four carriers, four moves to know</h2>
   </div>
 
+  <!-- Travelers -->
   <div class="card">
     <div class="tag">Commercial · BOP / Property / Auto</div>
     <div class="carrier">Travelers</div>
@@ -112,6 +117,7 @@ audio{width:100%;margin-top:16px;}
     <div class="action"><b>Do this:</b> Send Josh your contractor and manufacturing accounts and let him know what the premiums come in at.</div>
   </div>
 
+  <!-- Selective -->
   <div class="card">
     <div class="tag">Workers' Compensation</div>
     <div class="carrier">Selective</div>
@@ -123,6 +129,7 @@ audio{width:100%;margin-top:16px;}
     <div class="action"><b>Do this:</b> Lean into preferred WC and send Josh your comparisons.</div>
   </div>
 
+  <!-- BHHC -->
   <div class="card">
     <div class="tag">Commercial Auto · Utah</div>
     <div class="carrier">Berkshire Hathaway Homestate (BHHC)</div>
@@ -135,6 +142,7 @@ audio{width:100%;margin-top:16px;}
     <div class="action"><b>Do this:</b> Pull eligible auto risks and quote them in Breeze.</div>
   </div>
 
+  <!-- CSU -->
   <div class="card">
     <div class="tag">E&amp;S · Special Events</div>
     <div class="carrier">Cincinnati Specialty Underwriters (CSU)</div>
@@ -146,10 +154,7 @@ audio{width:100%;margin-top:16px;}
   </div>
 
   <div class="footer">
-    <div class="wordmark">
-      <div class="wm-top">Integrated<span class="dot">.</span></div>
-      <div class="wm-sub">Insurance Solutions</div>
-    </div>
+    <img class="brandlogo" src="iis-logo-white.png" alt="Integrated Insurance Solutions">
     Compiled by the Carrier Desk · Questions or comparisons go to <a href="mailto:josh.aldana@integratedslc.com">Josh Aldana</a>.<br>
     Integrated Insurance Solutions · 3191 S. Valley Street, Suite 206, Salt Lake City, UT 84109
     <div class="fine">Internal use only. Carrier appetite and pricing are subject to underwriting and state availability; confirm current eligibility with the carrier before binding.</div>
