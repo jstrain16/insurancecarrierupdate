@@ -3,15 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carrier Appetite Update — May 20, 2026</title>
+<title>Carrier Appetite Updates &mdash; Integrated Insurance Solutions</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Nunito+Sans:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap');
-
 :root{
   --ic-blue:#006699; --ic-blue-700:#005380; --ic-blue-800:#004268; --ic-blue-050:#E6F0F5;
   --ic-orange:#F78E28; --ic-orange-700:#E07818; --ic-orange-050:#FDEFDF;
   --ic-ink:#050608; --ic-steel:#808285; --ic-silver:#9B9CA0; --ic-offwhite:#F8F9FB; --ic-white:#FFFFFF;
-  --font-display:"Montserrat",system-ui,sans-serif;
   --font-heading:"Montserrat",system-ui,sans-serif;
   --font-body:"Proxima Nova","Nunito Sans",system-ui,sans-serif;
   --font-accent:"Inter",system-ui,sans-serif;
@@ -22,35 +20,20 @@
 body{font-family:var(--font-body);font-size:16px;line-height:1.5;color:var(--ic-ink);background:var(--ic-offwhite);-webkit-font-smoothing:antialiased;}
 .wrap{max-width:680px;margin:0 auto;background:var(--ic-white);box-shadow:var(--shadow-card);}
 .eyebrow{font-family:var(--font-accent);font-weight:600;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ic-orange);display:inline-block;}
-
-/* ---- Wordmark (text logo) ---- */
 .brandlogo{height:40px;width:auto;display:block;}
-.wordmark .wm-top{font-family:var(--font-heading);font-weight:800;font-size:20px;letter-spacing:0.02em;color:var(--ic-white);text-transform:uppercase;}
-.wordmark .wm-sub{font-family:var(--font-accent);font-weight:500;font-size:10px;letter-spacing:0.18em;color:var(--ic-silver);text-transform:uppercase;margin-top:3px;}
-.wordmark .wm-top .dot{color:var(--ic-orange);}
-
-/* ---- Masthead ---- */
 .masthead{background:var(--ic-ink);padding:26px 40px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
 .masthead .issue{font-family:var(--font-accent);font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ic-silver);text-align:right;}
-
-/* ---- Hero ---- */
 .hero{padding:48px 40px 36px;border-bottom:1px solid var(--divider);}
 .hero h1{font-family:var(--font-heading);font-weight:700;font-size:34px;line-height:1.15;margin:10px 0 14px;color:var(--ic-ink);}
 .hero p{font-size:17px;color:var(--ic-steel);max-width:52ch;}
-
-/* ---- Audio CTA band (the single orange action) ---- */
 .audio{margin:28px 40px 8px;border:1.5px solid var(--ic-orange);border-radius:6px;background:var(--ic-orange-050);padding:22px 24px;}
 .audio .label{font-family:var(--font-heading);font-weight:700;font-size:18px;color:var(--ic-ink);margin-bottom:4px;}
 .audio .sub{font-size:14px;color:var(--ic-steel);margin-bottom:14px;}
 .btn-orange{display:inline-block;background:var(--ic-orange);color:#fff;font-family:var(--font-accent);font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;padding:13px 26px;border-radius:2px;text-decoration:none;}
 .btn-orange:hover{background:var(--ic-orange-700);color:#fff;text-decoration:none;}
 audio{width:100%;margin-top:16px;}
-
-/* ---- Section heading ---- */
 .section-head{padding:36px 40px 4px;}
 .section-head h2{font-family:var(--font-heading);font-weight:700;font-size:22px;color:var(--ic-ink);margin-top:6px;}
-
-/* ---- Carrier cards ---- */
 .card{margin:18px 40px;border:1px solid var(--divider);border-left:4px solid var(--ic-blue);border-radius:6px;padding:22px 24px;}
 .card .carrier{font-family:var(--font-heading);font-weight:700;font-size:19px;color:var(--ic-blue);margin-bottom:2px;}
 .card .tag{font-family:var(--font-accent);font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--ic-steel);}
@@ -61,105 +44,48 @@ audio{width:100%;margin-top:16px;}
 .eff{display:inline-block;font-family:var(--font-accent);font-size:11px;font-weight:600;letter-spacing:0.04em;color:var(--ic-blue-800);background:var(--ic-blue-050);padding:2px 8px;border-radius:2px;margin-right:6px;}
 .action{margin-top:14px;padding-top:12px;border-top:1px solid var(--divider);font-size:14px;color:var(--ic-steel);}
 .action b{color:var(--ic-ink);}
-
-/* ---- Footer ---- */
+.issue-row{display:block;margin:14px 40px;border:1px solid var(--divider);border-left:4px solid var(--ic-blue);border-radius:6px;padding:18px 22px;text-decoration:none;color:inherit;}
+.issue-row:hover{box-shadow:var(--shadow-card);text-decoration:none;}
+.issue-row .num{font-family:var(--font-accent);font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--ic-orange);}
+.issue-row .it{font-family:var(--font-heading);font-weight:700;font-size:18px;color:var(--ic-ink);margin:4px 0 2px;}
+.issue-row .dt{font-size:13px;color:var(--ic-steel);}
 .footer{background:var(--ic-ink);color:var(--ic-silver);padding:30px 40px;margin-top:36px;font-size:13px;line-height:1.6;}
 .footer .brandlogo{height:28px;margin-bottom:14px;}
 .footer a{color:var(--ic-white);}
 .footer .fine{color:var(--ic-steel);font-size:11px;margin-top:14px;}
-
 @media (max-width:520px){
   .masthead,.hero,.section-head,.footer{padding-left:22px;padding-right:22px;}
-  .audio,.card{margin-left:22px;margin-right:22px;}
+  .audio,.card,.issue-row{margin-left:22px;margin-right:22px;}
   .hero h1{font-size:28px;}
 }
 </style>
 </head>
 <body>
 <div class="wrap">
-
   <div class="masthead">
     <img class="brandlogo" src="iis-logo-white.png" alt="Integrated Insurance Solutions">
-    <div class="issue">Carrier Desk<br>May 20, 2026</div>
+    <div class="issue">Carrier Desk<br>Archive</div>
   </div>
-
   <div class="hero">
-    <span class="eyebrow">Carrier Appetite Update</span>
-    <h1>This Week's Appetite &amp; Pricing Changes</h1>
-    <p>A quick breakdown of what our carriers sent over — the classes opening up, the pricing improvements worth quoting, and where to send your comparisons.</p>
+    <span class="eyebrow">Carrier Appetite Updates</span>
+    <h1>Weekly Carrier Briefings</h1>
+    <p>Appetite, pricing, and underwriting changes our carriers sent over &mdash; one short briefing each week, with an audio rundown in Josh's voice. Newest first.</p>
   </div>
-
-  <div class="audio">
-    <div class="label">Prefer to listen? Josh recorded the 2-minute rundown.</div>
-    <div class="sub">Hear the full appetite update in Josh Aldana's voice.</div>
-    <a class="btn-orange" href="carrier-appetite-update-2026-05-20.mp3">&#9654;&nbsp;&nbsp;Play the Audio Update</a>
-    <audio controls preload="none">
-      <source src="carrier-appetite-update-2026-05-20.mp3" type="audio/mpeg">
-      Your browser doesn't support inline audio — use the Play button above.
-    </audio>
-  </div>
-
   <div class="section-head">
-    <span class="eyebrow" style="color:var(--ic-blue);">The Breakdown</span>
-    <h2>Four carriers, four moves to know</h2>
+    <span class="eyebrow" style="color:var(--ic-blue);">All Issues</span>
+    <h2>Browse the updates</h2>
   </div>
-
-  <!-- Travelers -->
-  <div class="card">
-    <div class="tag">Commercial · BOP / Property / Auto</div>
-    <div class="carrier">Travelers</div>
-    <ul>
-      <li><span class="eff">Eff Apr 12</span> <b>Contractors</b> (concrete, tile, masonry, paving) moved to a .75 dev factor — a <b>25% pricing savings</b>, on top of the additional 25% scheduled credit you can still apply.</li>
-      <li><span class="eff">Eff Mar 15</span> <b>Manufacturing &amp; Wholesale</b> dropped to the same .75 for a 25% savings — a 3-month trial. Lead with metal mfg, cabinet/countertop shops, and tech. (Full UW review.)</li>
-      <li><span class="eff">Eff Jan 11</span> Opened low-exposure <b>contractor classes for BOP 2.0</b> — painting, power washing, sheet metal — in AZ, CO, OR, WA, and MT.</li>
-      <li><span class="eff">Eff Mar 27</span> <b>TCAP auto</b> moved to .85 for contractors to sharpen multiline pricing; monoline auto needs 5+ light-to-medium power units.</li>
-    </ul>
-    <div class="action"><b>Do this:</b> Send Josh your contractor and manufacturing accounts and let him know what the premiums come in at.</div>
-  </div>
-
-  <!-- Selective -->
-  <div class="card">
-    <div class="tag">Workers' Compensation</div>
-    <div class="carrier">Selective</div>
-    <ul>
-      <li><b>WC commission incentive:</b> 20% on the first $25,000 in premium for preferred WC classes, then 10% at renewal.</li>
-      <li>Preferred classes: retail shops, medical &amp; dental offices, banks/credit institutions, wholesale, schools, and LRO.</li>
-      <li>Bonus: bind $10,000 in premium through the 1-and-done / 2-and-done small-business portal and the rep covers a company-store item — notify Matthew Fish or Jessica McCue once you hit it.</li>
-    </ul>
-    <div class="action"><b>Do this:</b> Lean into preferred WC and send Josh your comparisons.</div>
-  </div>
-
-  <!-- BHHC -->
-  <div class="card">
-    <div class="tag">Commercial Auto · Utah</div>
-    <div class="carrier">Berkshire Hathaway Homestate (BHHC)</div>
-    <ul>
-      <li>Top-performing UT classes right now: <b>Non-Emergency Medical Transportation</b> (for-profit, non-profit, and new ventures — prefers permanently attached medical equipment / lifts).</li>
-      <li><b>Tow Trucks &amp; Tilt-Bed Auto Haulers</b> — confirm body type before submitting.</li>
-      <li><b>Day Care Center Autos</b> — flagged as a growth class for Utah.</li>
-      <li>Rate 1–10 power units in the Breeze Auto Rater; 11+ fleet submissions go to auto@bhhomestate.com.</li>
-    </ul>
-    <div class="action"><b>Do this:</b> Pull eligible auto risks and quote them in Breeze.</div>
-  </div>
-
-  <!-- CSU -->
-  <div class="card">
-    <div class="tag">E&amp;S · Special Events</div>
-    <div class="carrier">Cincinnati Specialty Underwriters (CSU)</div>
-    <ul>
-      <li>Will now write <b>special event policies with liquor liability</b> — coverage is <b>not</b> available on BYOB events.</li>
-      <li>Most placements can go through their quick-issue team; a special-event application is on file with the carrier desk.</li>
-    </ul>
-    <div class="action"><b>Do this:</b> Bring Josh your special-event opportunities that need liquor liability.</div>
-  </div>
-
+  <a class="issue-row" href="update-1.html">
+    <div class="num">Issue #1 &middot; May 20, 2026</div>
+    <div class="it">This Week's Appetite &amp; Pricing Changes</div>
+    <div class="dt">Read the breakdown and listen to the audio &rarr;</div>
+  </a>
   <div class="footer">
     <img class="brandlogo" src="iis-logo-white.png" alt="Integrated Insurance Solutions">
-    Compiled by the Carrier Desk · Questions or comparisons go to <a href="mailto:josh.aldana@integratedslc.com">Josh Aldana</a>.<br>
-    Integrated Insurance Solutions · 3191 S. Valley Street, Suite 206, Salt Lake City, UT 84109
+    Compiled by the Carrier Desk &middot; Questions or comparisons go to <a href="mailto:josh.aldana@integratedslc.com">Josh Aldana</a>.<br>
+    Integrated Insurance Solutions &middot; 3191 S. Valley Street, Suite 206, Salt Lake City, UT 84109
     <div class="fine">Internal use only. Carrier appetite and pricing are subject to underwriting and state availability; confirm current eligibility with the carrier before binding.</div>
   </div>
-
 </div>
 </body>
 </html>
